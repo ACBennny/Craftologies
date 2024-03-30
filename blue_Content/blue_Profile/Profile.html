@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en" class="html_class">
+    <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile</title>
+    <link rel="shortcut icon" href="../../blue_Img_Main/logoIcn.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../Main_Blue_style.css">
+	<link rel="stylesheet" type="text/css" href="Profile_style.css">
+	<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://kit.fontawesome.com/a46ad8b86a.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="base">
+
+
+        <!-- -- Prelaoder -- -->
+        <div class="preloader_class">
+            <div class="preload_spinner"></div>
+        </div>
+
+
+        
+            <!-- --navbar -->
+            <div class="navbar scroll_up">
+                <div class="company_title">
+                    <h2>
+                        <div class="company_det">
+                            <img src="../../blue_Img_Main/company_logo.png" alt="">
+                            <span class="company_name">RAFT</span>
+                        </div>
+                        <h6 class="company_motto">surpassing expectations</h6>
+                    </h2>
+                </div>
+                <div class="nav_Content">
+                    <i class="fa-solid fa-layer-group open_nav_sets"></i>
+                    <div class="nav_ctnt_bcg"></div>
+                    <div class="nav_sets">
+                        <div class="nav_links">
+                            <a href="../blue_home/Home.html" class="">Home</a>
+                            <a href="../blue_Market/MarketPlace.html" class="">MarketPlace</a>
+                            <a href="../blue_Know_Us/KnowUs.html" class="">About Us</a>
+                            <a href="../blue_Customer_Care/Customer_Care.html" class="">Contact Us</a>
+                            <a href="#" class="static_class"></a>
+                        </div>
+                        <div class="profile_logo">
+                            <i class="fa-solid fa-magnifying-glass search_btn"></i>
+
+                            <!-- <button class="sign_up">Sign Up</button> -->
+                            <i class="fa-regular fa-circle-user open_prof_links"></i>
+                            <div class="profile_links_box"></div>
+                            <div class="profile_links">
+                                <div class="prof_link_btn">
+                                    <img src="../../blue_Img_Main/body_bcg1.jpg" alt=""><a href="../blue_Profile/Profile.html">Profile</a>
+                                </div>
+                                <div class="prof_link_btn">
+                                    <i class="fa-solid fa-cart-shopping"></i><a href="../blue_Cart/Cart.html">Cart</a>
+                                </div>
+                                <div class="prof_link_btn">
+                                    <i class="fa-solid fa-hand-fist"></i><a href="../blue_Membership/Membership.html">Membership</a>
+                                </div>
+                                <div class="prof_link_btn" style=" display: none;">
+                                    <div class="theme_box">
+                                        <div class="light_theme ">
+                                            <i class="fa-solid fa-sun"></i>
+                                        </div>
+                                        <div class="dark_theme curr_theme">
+                                            <i class="fa-solid fa-moon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <!-- search -->
+            <div class="search_box">
+                <i class="fa-solid fa-xmark-circle close_search_frame"></i>
+                <div class="search_box_bcg"></div>
+                <div class="search_frame_box"></div>
+            </div>
+
+
+        <!--  ------- BODY ------ -->
+        <div class="main_body">
+            <div class="main_body_content">
+                <div class="profile_bdr">
+                    <div class="profile_box ">
+
+                        <!-- User details Quick view -->
+                        <div class="profile_quick_view">
+                            <div class="profile_quick_view_ctnt">
+                                <i class="fa-solid fa-xmark close_quickView"></i>
+                                <div class="profile_img_box">
+                                    <div class="profile_img_bdr">
+                                        <div class="profile_img">
+                                            <img src="../../blue_Img_Main/profile_1.jpg" alt="" class="image">
+                                            <div class="open_quickView"></div>
+                                            <div class="profile_img_edit_box">
+                                                <label for="profile_img_input" type="button" class="profile_img_edit_btn">Choose pic</label>
+                                                <span class="remove_pfp">Remove pic</span>
+                                                <input type="file" name="User_pfp_input" id="profile_img_input" title="profile picture">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile_summary_box">
+                                    <div class="profile_summary_section">
+                                        <i class="fa-solid fa-id-badge"></i>
+                                        <p id="profile_name_quick">n/a</p>
+                                    </div>
+                                    <div class="profile_summary_section">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p id="profile_email_quick">n/a</p>
+                                    </div>
+                                    <div class="profile_summary_section">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p id="profile_number_quick">n/a</p>
+                                    </div>
+                                    <div class="profile_summary_section">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p id="profile_address_quick">100 tummy oof me street, crash valley, Roverse</p>
+                                    </div>
+                                    <div class="profile_summary_section">
+                                        <i class="fa-solid fa-wallet"></i>
+                                        <p id="profile_Ewallet_show">$1000.00</p>
+                                        <p id="profile_Ewallet_hide" class="active">*********</p>
+                                        <i class="fa-regular fa-eye show_bal"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- hide main -->
+                        <div class="hide_profileMain"></div>
+
+                        <!-- Main -->
+                        <div class="profile_main">
+                            <div class="profile_main_ctnt">
+                                
+                                <!-- content -->
+                                <div class="profile_content">
+                                    <div class="profile_intro_box">
+                                        <div class="profile_intro_message">
+                                            <h1>Hi, <span id="profile_intro_name">Benny Suun</span></h1>
+                                            <h5>Welcome to your Profile</h5>
+                                        </div>
+                                    </div>
+                                    <div class="profile_options_bdr">
+                                        <div class="profile_options_box">
+                                            <div class="profile_option option_click">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section">
+                                                        <i class="fa-regular fa-circle-user"></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div class="info_section_det">
+                                                            <h3 class="info_section_head">Personal Information</h3>
+                                                            <div class="info_section_abt">
+                                                                <p class="abt_card">Modify details like name, email and password</p>
+                                                                <span class="info_section_notify" id=""></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final">Your info</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile_option option_click">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section"><i class="fa-regular fa-address-card"></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div class="info_section_det">
+                                                            <h3 class="info_section_head">Address</h3>
+                                                            <div class="info_section_abt">
+                                                                <p class="abt_card">Fill in your address to allow us deliver directly to you</p>
+                                                                <span class="info_section_notify" id=""></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final">Your address</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile_option option_click">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section">
+                                                        <i class="fa-solid fa-credit-card"></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div class="info_section_det">
+                                                            <h3 class="info_section_head">Payment Methods</h3>
+                                                            <div class="info_section_abt">
+                                                                <p class="abt_card">Add details to enable a better purchasing experience</p>
+                                                                <span class="info_section_notify" id="info_payment_method_notify"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final">Your payment gateway</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile_option option_click">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section">
+                                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div class="info_section_det">
+                                                            <h3 class="info_section_head">Order History</h3>
+                                                            <div class="info_section_abt">
+                                                                <div class="abt_card">See all products you have ordered and track all ongoing orders</div>
+                                                                <span class="info_section_notify" id="info_order_notify"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final">Your Orders</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile_option option_click">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section">
+                                                        <i class="fa-solid fa-wallet"></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div class="info_section_det">
+                                                            <h3 class="info_section_head">E-Wallet</h3>
+                                                            <div class="info_section_abt">
+                                                                <p class="abt_card">Enjoy quick payments and cashback with your digital wallet</p>
+                                                                <span class="info_section_notify" id="info_wallet_notify"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final">Your Wallet</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile_option option_click">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section">
+                                                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div class="info_section_det">
+                                                            <h3 class="info_section_head">Preference Hub</h3>
+                                                            <div class="info_section_abt">
+                                                                <p class="abt_card">Personalise your account and choose the how we serve you</p>
+                                                                <span class="info_section_notify" id="info_preference_notify"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final">Your preferences</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile_option redirect_to_membership">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section">
+                                                        <i class="fa-solid fa-users"></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div class="info_section_det">
+                                                            <h3 class="info_section_head">Membership</h3>
+                                                            <div class="info_section_abt">
+                                                                <p class="abt_card">Become a member and gain access to exclusive deals and much more</p>
+                                                                <span class="info_section_notify" id="info_membership_notify"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final">Your membership</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="profile_option">
+                                                <div class="profile_option_card">
+                                                    <div class="icon_section">
+                                                        <i></i>
+                                                    </div>
+                                                    <div class="info_section">
+                                                        <div>
+                                                            <h3 class="info_section_head"></h3>
+                                                            <div class="info_section_abt">
+                                                                <p class="abt_card"></p>
+                                                                <span class="info_section_notify" id=""></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info_section_final"></div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- option Sections -->
+                                
+                                <div class="option_section personal_info_main">
+                                    <div class="option_section_ctnt">
+                                        <div class="gen_Style close_section" title="Go back">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="option_section_title_box">
+                                            <h1 class="option_section_title">Personal Information</h1>
+                                            <p class="option_section_subtitle">Edit your personal details for your convenience</p>
+                                        </div>
+
+                                        <div class="personal_info_bdr">
+                                            <div class="personal_info_box">
+                                                <div class="info_section">
+                                                    <div class="info_detail">
+                                                        <h4 class="major">Name</h4>
+                                                        <p class="minor" id="profile_name">Benny Suun</p>
+                                                    </div>
+                                                    <div class="info_edit_box">
+                                                        <h4 class="info_edit_btn">Edit</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="info_section">
+                                                    <div class="info_detail">
+                                                        <h4 class="major">Email</h4>
+                                                        <p class="minor" id="profile_email">craft.testuser.Acc.email@gmail.com</p>
+                                                    </div>
+                                                    <div class="info_edit_box">
+                                                        <h4 class="info_edit_btn">Edit</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="info_section">
+                                                    <div class="info_detail">
+                                                        <h4 class="major">Phone Number</h4>
+                                                        <p class="minor" id="profile_phoneNo">+0123456789</p>
+                                                    </div>
+                                                    <div class="info_edit_box">
+                                                        <h4 class="info_edit_btn">Edit</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="info_section">
+                                                    <div class="info_detail">
+                                                        <h4 class="major">Password</h4>
+                                                        <p class="minor" id="profile_password">***************</p>
+                                                    </div>
+                                                    <div class="info_edit_box">
+                                                        <h4 class="info_edit_btn">Edit</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="edit_info_bdr">
+                                            <div class="edit_info_box">
+                                                <label for="edit_name_field" class="edit_info_title">Name</label>
+                                                <span class="edit_input_box">
+                                                    <input type="text" name="name" id="edit_name_field" class="edit_input_field" value="" disabled>
+                                                </span>
+                                                <span class="warn_text new_name_warn"></span>
+                                                <div class="save_edit_box">
+                                                    <input type="button" class="edit_btn cancel_edit_btn pInfoCancel" value="Cancel" disabled>
+                                                    <input type="button" class="edit_btn save_edit_btn" id="update_profile_name" value="Update" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit_info_bdr">
+                                            <div class="edit_info_box">
+                                                <label for="edit_email_field_new" class="edit_info_title">New Email</label>
+                                                <span class="edit_input_box">
+                                                    <input type="email" name="new_email" id="edit_email_field_new" class="edit_input_field" value=""disabled>
+                                                </span>
+                                                <span class="warn_text new_email_warn"></span>
+                                                <label for="edit_email_field_confirm" class="edit_info_title">Confirm New Email</label>
+                                                <span class="edit_input_box">
+                                                    <input type="email" name="new-email" id="edit_email_field_confirm" class="edit_input_field" value="" disabled>
+                                                </span>
+                                                <span class="warn_text new_email_confirm_warn"></span>
+                                                <label for="edit_email_field_pass" class="edit_info_title">Password</label>
+                                                <span class="edit_input_box">
+                                                    <input type="password" name="password" id="edit_email_field_pass" class="edit_input_field" value="" disabled>
+                                                </span>
+                                                <span class="warn_text new_email_pass_warn"></span>
+                                                <div class="save_edit_box">
+                                                    <input type="button" class="edit_btn cancel_edit_btn pInfoCancel" value="Cancel" disabled>
+                                                    <input type="button" class="edit_btn save_edit_btn" id="update_profile_email" value="Update" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit_info_bdr">
+                                            <div class="edit_info_box">
+                                                <label for="edit_phoneNo_field" class="edit_info_title">Phone Number</label>
+                                                <span class="edit_input_box">
+                                                    <input type="text" name="new_phoneNo" id="edit_phoneNo_field" class="edit_input_field" value="" disabled>
+                                                </span>
+                                                <span class="warn_text new_phoneNo_pass_warn"></span>
+                                                <div class="save_edit_box">
+                                                    <input type="button" class="edit_btn cancel_edit_btn pInfoCancel" value="Cancel" disabled>
+                                                    <input type="button" class="edit_btn save_edit_btn" id="update_profile_phoneNo" value="Update" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit_info_bdr">
+                                            <div class="edit_info_box">
+                                                <label for="edit_pass_field_current" class="edit_info_title">Current Password</label>
+                                                <span class="edit_input_box">
+                                                    <input type="password" name="current_password" id="edit_pass_field_current" class="edit_input_field" value="" disabled>
+                                                </span>
+                                                <span class="warn_text curr_pass_warn"></span>
+                                                <label for="edit_pass_field_new" class="edit_info_title">New Password</label>
+                                                <span class="edit_input_box">
+                                                    <input type="password" name="new_password" id="edit_pass_field_new" class="edit_input_field" value="" disabled>
+                                                </span>
+                                                <span class="warn_text new_pass_warn"></span>
+                                                <label for="edit_pass_field_confirm" class="edit_info_title">Confirm New Password</label>
+                                                <span class="edit_input_box">
+                                                    <input type="password" name="confirm_password" id="edit_pass_field_confirm" class="edit_input_field" value="" disabled>
+                                                </span>
+                                                <span class="warn_text new_pass_confirm_warn"></span>
+                                                <div class="save_edit_box">
+                                                    <input type="button" class="edit_btn cancel_edit_btn pInfoCancel" value="Cancel" disabled>
+                                                    <input type="button" class="edit_btn save_edit_btn" id="update_profile_pass" value="Update" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_section">
+                                    <div class="option_section_ctnt">
+                                        <div class="gen_Style close_section" title="Go back">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="option_section_title_box">
+                                            <h1 class="option_section_title">Addresses</h1>
+                                            <p class="option_section_subtitle">Add one or more shipping addresses and select your preferred destination</p>
+                                        </div>
+
+                                        <h4 class="no_add_notify">You have no saved addresses</h4>
+
+                                        <div class="add_new_box">
+                                            <p class="ctnt">
+                                                <span>+</span>
+                                                <span>Add a new Shipping Address</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="new_form_bdr">
+                                            <h2 class="major_title">Add a new Shipping Address</h2>
+                                            <div class="new_form_box">
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* First Name</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="firstName" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Last Name</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="lastName" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Phone Number</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="phoneNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Ext. (Optional)</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="extPhoneNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Address</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="address" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* City</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="city" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Province</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="province" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Postal Code</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="postalCode" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Country</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="country" id="" class="edit_input_field" value="Canada" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Address Nickname (Optional)</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="addressNickname" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="use_as_dflt">
+                                                        <div class="note">Use this address as my default shipping address</div>
+                                                        <div class="check_bdr">
+                                                            <div class="check_box"></div>
+                                                            <span class="check_box_hidden">
+                                                                <input type="checkbox" name="selectAsDefault" id="" disabled>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <div class="save_edit_box">
+                                                            <input type="button" class="edit_btn cancel_edit_btn close_Add_new_form_bdr" value="Cancel" disabled>
+                                                            <input type="button" class="edit_btn save_edit_btn close_Add_new_form_bdr" id="" value="Add" disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_section">
+                                    <div class="option_section_ctnt">
+                                        <div class="gen_Style close_section" title="Go back">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="option_section_title_box">
+                                            <h1 class="option_section_title">Payment methods</h1>
+                                            <p class="option_section_subtitle">Add your card to your account to make payments faster</p>
+                                        </div>
+                                        
+                                        <h4 class="no_add_notify">You have no saved cards</h4>
+
+                                        <div class="add_new_box">
+                                            <p class="ctnt">
+                                                <span>+</span>
+                                                <span>Add a new Credit Card</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="new_form_bdr">
+                                            <h2 class="major_title">Add a new Credit card</h2>
+                                            <div class="new_form_box">
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Card Number</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="cardNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Expiry Month</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="expiryMonth" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Expiry Year</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="expiryYear" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* First Name</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="firstName" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Last Name</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="lastName" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Phone Number</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="phoneNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Ext. (Optional)</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="extPhoneNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Address</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="address" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* City</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="city" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Province</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="province" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Postal Code</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="postalCode" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Country</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="country" id="" class="edit_input_field" value="Canada" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Card Nickname (Optional)</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="cardNicknmae" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="use_as_dflt">
+                                                        <div class="note">Use this card as my default card</div>
+                                                        <div class="check_bdr">
+                                                            <div class="check_box"></div>
+                                                            <span class="check_box_hidden">
+                                                                <input type="checkbox" name="selectAsDefault" id="" disabled>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <div class="save_edit_box">
+                                                            <input type="button" class="edit_btn cancel_edit_btn" value="Cancel" disabled>
+                                                            <input type="button" class="edit_btn save_edit_btn" id="" value="Add" disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_section">
+                                    <div class="option_section_ctnt">
+                                        <div class="gen_Style close_section" title="Go back">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="option_section_title_box">
+                                            <h1 class="option_section_title">Order History</h1>
+                                        </div>
+                                        <div class="order_search_bdr">
+                                            <label for="order_search_input" class="order_search_title">Search for an Order</label>
+                                            <div class="order_search_box">
+                                                <input type="search" name="order_Search" id="order_search_input" class="order_search_inputfield" placeholder="Enter product name or order no.">
+                                            </div>
+                                        </div>
+                                        <div class="order_result_bdr">
+                                            <div class="order_result_box">
+                                                <div class="base_notify empty_field">
+                                                    <div class="notify_text">No orders at the moment</div>
+                                                    <div class="notify_icon_box">
+                                                        <i class="fa-regular fa-clipboard notify_icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="base_notify no_match">
+                                                    <div class="notify_text">No orders found</div>
+                                                    <div class="notify_icon_box">
+                                                        <i class="fa-solid fa-rotate-left notify_icon"></i>
+                                                    </div>
+                                                    <div class="notify_text">Please check that the name/number is typed in correctly</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_extra_actions">
+                                            <div class="order_action_box">
+                                                <h3 class="order_action_head">Need to cancel an order?</h3>
+                                                <p class="order_action_body">
+                                                    Placed a wrong order? Changed your mind? 
+                                                    You may be able to cancel your order 
+                                                    before we start working on it.
+                                                </p>
+                                                <a href="#"><h5 class="order_final">Cancel Now ></h5></a>
+                                            </div>
+                                            <div class="order_action_box">
+                                                <h3 class="order_action_head">Need to return an order?</h3>
+                                                <p class="order_action_body">
+                                                    Not satifisfied with your product? 
+                                                    Learn more about our return policies and how you can return orders.
+                                                </p>
+                                                <a href="#"><h5 class="order_final">Return policies ></h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_section">
+                                    <div class="option_section_ctnt">
+                                        <div class="gen_Style close_section" title="Go back">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="option_section_title_box">
+                                            <h1 class="option_section_title">E - Wallet</h1>
+                                            <p class="option_section_subtitle">
+                                                Set up your personal digital wallet allowing for instant payments,
+                                                opportunities to earn cashbacks and much more
+                                            </p>
+                                        </div>
+
+                                        <h4 class="no_add_notify">Your e-wallet has not been set up</h4>
+
+                                        <div class="add_new_box">
+                                            <p class="ctnt">
+                                                <span>Set up E - Wallet</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="new_form_bdr">
+                                            <h2 class="major_title">Personal details</h2>
+                                            <div class="new_form_box">
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* First Name</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="firstName" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Last Name</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="lastName" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Phone Number</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="phoneNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Ext. (Optional)</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="extPhoneNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Card Number</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="cardNumber" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Expiry Month</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="expiryMonth" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Expiry Year</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="expiryYear" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">Address</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="address" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* City</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="city" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Province</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="province" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Postal Code</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="postalCode" id="" class="edit_input_field" value="" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                    <div class="edit_info_box">
+                                                        <label for="edit_name_field" class="edit_info_title">* Country</label>
+                                                        <span class="edit_input_box">
+                                                            <input type="text" name="country" id="" class="edit_input_field" value="Canada" disabled>
+                                                        </span>
+                                                        <span class="warn_text"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="use_as_dflt">
+                                                        <div class="note">By setting up e-wallet, you agree to our <a href="#">Terms of Use</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form_sect">
+                                                    <div class="edit_info_box">
+                                                        <div class="save_edit_box">
+                                                            <input type="button" class="edit_btn cancel_edit_btn" value="Cancel" disabled>
+                                                            <input type="button" class="edit_btn save_edit_btn" id="" value="Add" disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_section">
+                                    <div class="option_section_ctnt">
+                                        <div class="gen_Style close_section" title="Go back">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="option_section_title_box">
+                                            <h1 class="option_section_title">Preference Hub</h1>
+                                            <p class="option_section_subtitle">
+                                                Choose your preferrences to make your experience better.
+                                                Your information is used according to our privacy policy.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="preference_bdr">
+                                            <div class="preference_box">
+                                                <h4 class="head">Promotional Emails</h4>
+                                                <p class="mid">Personalize what and how promotional emails are sent to you.</p>
+                                                <h5 class="gen_btn pref_btn">Manage Promotions</h5>
+                                            </div>
+                                            <div class="preference_box">
+                                                <h4 class="head">Cookies</h4>
+                                                <p class="mid">See how we make use of your cookies.</p>
+                                                <h5 class="gen_btn pref_btn">Manage Cookies</h5>
+                                            </div>
+
+                                            <div class="pref_sect_bdr">
+                                                <div class="pref_sect_box">
+                                                    <div class="pref_sections">
+                                                        <h2 class="pref_sect_title">Promotional Emails</h2>
+                                                        <div class="pref_subsection">
+                                                            <h4 class="sub_head">Allow Craft to send me promotional emails</h4>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head">Weeekly Newsletter</h5>
+                                                                    <p class="mid">
+                                                                        At the start of Every weekend we'll send you a sum up of the best deals, 
+                                                                        huge discount events, sales and other important updates that you should know.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="check_bdr">
+                                                                    <div class="check_box active"></div>
+                                                                    <span class="check_box_hidden">
+                                                                        <input type="checkbox" name="checkbox" id="">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head">All Other Promotions</h5>
+                                                                    <p class="mid">
+                                                                        We will send you more frequent emails on the greatests deals, 
+                                                                        new openings and new events/promotions on our platform.
+                                                                        Don't miss out!
+                                                                    </p>
+                                                                </div>
+                                                                <div class="check_bdr">
+                                                                    <div class="check_box active"></div>
+                                                                    <span class="check_box_hidden">
+                                                                        <input type="checkbox" name="checkbox" id="">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head">Get deals from your local store (Optional)</h5>
+                                                                    <p class="mid">
+                                                                        <span class="edit_input_box">
+                                                                            <input type="text" name="postal_code" id="pref_postal_code"
+                                                                             class="edit_input_field" placeholder="Enter your postal code">
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pref_sections">
+                                                        <h2 class="sect_title">Third-party Redirects</h2>
+                                                        <div class="pref_subsection">
+                                                            <h4 class="sub_head">Allow Craft to use my email for redirecting</h4>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head"></h5>
+                                                                    <p class="mid">
+                                                                        As craftologies is a sub affiliate under the Valkyrien Empire 
+                                                                        your email maybe used in combination with other platform activity 
+                                                                        in sharing ads about our services on both our platforms and Third-party sites 
+                                                                        both related to the Valkyrien Empire and other sites in general.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="check_bdr">
+                                                                    <div class="check_box active"></div>
+                                                                    <span class="check_box_hidden">
+                                                                        <input type="checkbox" name="checkbox" id="">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pref_sections">
+                                                        <p class="sect_subtitle">To learn more about how we use your email, see our <a href="#">Privacy policies</a></p>
+                                                    </div>
+                                                    <div class="save_preferences">
+                                                        <div class="gen_btn save_preferences_btn">Save Preferences</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pref_sect_bdr">
+                                                <div class="pref_sect_box">
+                                                    <div class="pref_sections">
+                                                        <h2 class="pref_sect_title">Cookie Preferences</h2>
+                                                        <div class="pref_subsection">
+                                                            <h4 class="sub_head">How it works</h4>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <p class="mid">
+                                                                        When you visit any website, it may store or retrieve information on your device, 
+                                                                        mostly in the form of cookies. Cookies are vital to enhancing site performance
+                                                                        and delivering helpful, personalized content.
+                                                                        You can explore the different types of cookies below.
+                                                                    </p>
+                                                                    <h5 class="head">Important</h5>
+                                                                    <p class="mid">
+                                                                        Since your privacy is important to us, you can choose to only enable some types of cookies. 
+                                                                        <strong>However, disabling them may impact your shopping experience and the services we offer.</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="save_preferences">
+                                                            <div class="gen_btn save_preferences_btn">Accept All</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pref_sections">
+                                                        <div class="pref_subsection">
+                                                            <h4 class="sub_head">Cookies</h4>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head">Required Cookies</h5>
+                                                                    <p class="mid">
+                                                                        These are the essential cookies that is required for our website to run normally.
+                                                                        Examples includes but is not limited to creating an Account, Logging in, filling forms etcetera.
+                                                                        <strong>This it is always active and can not be turned off.</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head">Maintenance Cookies</h5>
+                                                                    <p class="mid">
+                                                                        These cookies allow us to monitr traffic across our websites.
+                                                                        Doing this enables us to properly take care of our site and
+                                                                        keep it in the best condition.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="check_bdr">
+                                                                    <div class="check_box active"></div>
+                                                                    <span class="check_box_hidden">
+                                                                        <input type="checkbox" name="checkbox" id="">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head">Guidance Cookies</h5>
+                                                                    <p class="mid">
+                                                                        The Guidance cookies allow us to execute certain features that improves your overall experience.
+                                                                        Such features includes our live chat, automatic form filling etcetera.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="check_bdr">
+                                                                    <div class="check_box active"></div>
+                                                                    <span class="check_box_hidden">
+                                                                        <input type="checkbox" name="checkbox" id="">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pref_content_box">
+                                                                <div class="pref_content_det">
+                                                                    <h5 class="head">Retargeting Cookies</h5>
+                                                                    <p class="mid">
+                                                                        These cookies are used by our affiliates and third-party services for the purpose of advertisement.
+                                                                        They do not store information but may uniquely identify your browser and device.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="check_bdr">
+                                                                    <div class="check_box active"></div>
+                                                                    <span class="check_box_hidden">
+                                                                        <input type="checkbox" name="checkbox" id="">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pref_sections">
+                                                        <p class="sect_subtitle">To learn more about how we use your cookies, see our <a href="#">Privacy policies</a>.</p>
+                                                    </div>
+                                                    <div class="save_preferences">
+                                                        <div class="gen_btn save_preferences_btn">Save Preferences</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Great Perks -->
+                                <div class="great_perk_bdr">
+                                    <div class="great_perk_box">
+                                        <div class="perk_box" id="">
+                                            <i class="fa-solid fa-sack-dollar"></i>
+                                            <a href="#">Low Prices</a>
+                                        </div>
+                                        <div class="perk_box" id="">
+                                            <i class="fa-solid fa-clock-rotate-left"></i>
+                                            <a href="#">Quick deliveries</a>
+                                        </div>
+                                        <div class="perk_box" id="">
+                                            <i class="fa-solid fa-truck-fast"></i>
+                                            <a href="#">Free Shipping for orders over $25</a>
+                                        </div>
+                                        <div class="perk_box" id="">
+                                            <i class="fa-regular fa-thumbs-up"></i>
+                                            <a href="#">Superior Quality</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Footer -->
+                                <div class="footer_basic_bdr">
+                                    <div class="footer_basic_box">
+                                        <h2>CRAFTOLOGIES Ltd<i class="fa-solid fa-trademark"></i></h2>
+                                        <p><i class="fa-regular fa-copyright"></i>2023 | All Rights Reserved</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Back to top of page -->
+                <a href="#" class="back_to_top_btn gen_Style">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <!-- --script-- -->
+        <script src="../../Main_Blue_script.js"></script>
+        <script src="Profile_script.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="html_class">
+    <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Join Craft</title>
+    <link rel="shortcut icon" href="../../blue_Img_Main/logoIcn.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../Main_Blue_style.css">
+	<link rel="stylesheet" type="text/css" href="Signup_style.css">
+	<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://kit.fontawesome.com/a46ad8b86a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src =  
+    "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" > 
+    </script> 
+    <script type="text/javascript" src= 
+    "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"> 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    </head>
+    <body class="base Join_BAse">
+
+
+        <!-- -- Prelaoder -- -->
+        <div class="preloader_class">
+            <div class="preload_spinner"></div>
+        </div>
+
+        <!-- Body -->
+        <div class="main_body">
+            <div class="main_body_content">
+
+                <!-- desktop -->
+                <div class="join_bcg">
+                    <div class="join_bdr">
+                        <div class="join_caption_bdr">
+                            <div class="join_caption_box">
+                                <div class="caption_title">
+                                    <img src="../../blue_Img_Main/company_logo.png" alt="company logo">
+                                    <h1>RAFT</h1>
+                                </div>
+                                <div class="caption_message">Start Shopping with Us</div>
+                            </div>
+                        </div>
+                        <div class="join_box">
+                            <!-- Header -->
+                            <div class="join_title">
+                                <h3 for="join_rad" class="logIn_title">Log In</h3>
+                                <h3 for="join_rad" class="signIn_title">Sign Up</h3>
+                                <div class="join_title_bdr"></div>
+                            </div>
+                            <!-- Forms -->
+                            <div class="join_content_bdr">
+                                <input type="radio" name="radio" id="join_rad1" class="join_radio" checked>
+                                <input type="radio" name="radio" id="join_rad2" class="join_radio" >
+
+                                <!-- Log In Box -->
+                                <form action="#" method="get" name="LogIn_Form" class="join_content_box LogIn_box" >
+
+                                    <!-- Email -->
+                                    <div class="join_content logIn_content">
+                                        <label for="logIn_email">Email</label>
+                                        <span class="join_content_input"><input type="email" name="email" id="logIn_email" placeholder="enter your email" ></span>
+                                    </div>
+
+                                    <!-- Password -->
+                                    <div class="join_content logIn_content">
+                                        <label for="logIn_password">Password</label>
+                                        <span class="join_content_input"><input type="password" name="password" id="logIn_password" placeholder="enter your password" maxlength="100" ></span>
+                                    </div>
+
+                                    <!-- Error Warning -->
+                                    <div class="join_content logIn_content">
+                                        <span class="warning" id="logIn_warn"></span>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="join_content logIn_content">
+                                        <button type="button" class="gen_btn join_content_btn logIn_content_btn active" id="logIn_btn" >Log In</button>
+                                    </div>
+
+                                    <!-- Forgot Log in detaisl -->
+                                    <div class="join_content logIn_content">
+                                        <p class="acc__issue">
+                                            Forgot Password?
+                                            <i class="fa-solid fa-info-circle" id="acc_LogIn_issue"></i>
+                                        </p>
+                                    </div>
+                                </form>
+
+                                <!-- Sign Up Box -->
+                                <form action="#" method="get" name="signUp_Form" class="join_content_box signUp_box">
+
+                                    <!-- Name -->
+                                    <div class="join_content signUp_content">
+                                        <label for="signUp_name">Name</label>
+                                        <span class="join_content_input">
+                                            <input type="text" name="username" id="signUp_name" placeholder="enter a you name" maxlength="1000" >
+                                        </span>
+                                    </div>
+                                        <!-- warning -->
+                                        <div class="join_content signUp_content">
+                                            <span class="warning" id="signIn_name_warn"></span>
+                                        </div>
+
+                                    <!-- Password -->
+                                    <div class="join_content signUp_content" title="Password contain at least one letter in uppercase and lowercase, one number, and one special character">
+                                        <label for="signUp_new_password">Add Password</label>
+                                        <span class="join_content_input"><input type="password" name="password" id="signUp_new_password" placeholder="enter a tough password"></span>
+                                    </div>
+                                        <!-- warning -->
+                                        <div class="join_content signUp_content">
+                                            <span class="warning" id="signIn_pass_warn"></span>
+                                        </div>
+
+                                    <!-- Confirm Password -->
+                                    <div class="join_content signUp_content">
+                                        <label for="signUp_confirm_password">Confirm Password</label>
+                                        <span class="join_content_input"><input type="password" name="password" id="signUp_confirm_password" placeholder="re-enter your password"></span>
+                                    </div>
+                                        <!-- warning -->
+                                        <div class="join_content signUp_content">
+                                            <span class="warning" id="signIn_confUser_warn"></span>
+                                        </div>
+
+                                    <!-- Email -->
+                                    <div class="join_content signUp_content">
+                                        <label for="signUp_new_email">Email</label>
+                                        <span class="join_content_input"><input type="email" name="email" id="signUp_new_email" placeholder="enter a valid email" ></span>
+                                    </div>
+                                        <!-- warning -->
+                                        <div class="join_content signUp_content">
+                                            <span class="warning" id="signIn_email_warn"></span>
+                                        </div>
+
+                                    <!-- Terms and Conditions -->
+                                    <div class="join_content signUp_content checkifValid">
+                                        <span class="join_content_input_checkbox">
+                                            <span class="signIn_checkbox_bdr active">
+                                                <input title="Agree to our terms" type="checkbox" class="signIn_checkbox_class" name="sign_In_checkbox" id="signIn_checkbox_id" disabled>
+                                            </span>
+                                            <p>
+                                                By clicking you agree to our
+                                                <br>
+                                                <span class="blue_craft_terms">"Terms and Conditions"</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                        <!-- warning -->
+                                        <div class="join_content signUp_content">
+                                            <span class="warning" id="signIn_TandC_warn"></span>
+                                        </div>
+
+                                    <!-- Submit -->
+                                    <div class="join_content signUp_content checkifValid">
+                                        <button type="button" class="gen_btn join_content_btn signUp_content_btn" id="signUp_btn">Sign Up</button>
+                                    </div>
+
+                                    <!-- Account Guide (Help) -->
+                                    <div class="join_content signUp_content">
+                                        <p class="acc__issue">
+                                            Experiencing any difficulties?
+                                            <i class="fa-solid fa-info-circle" id="acc_SignIn_issue"></i>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forgot Password to Account -->
+                <div class="acc_creation_bdr">
+                    <!-- Account Guide Box -->
+                    <div class="acc_creation_box">
+                        <h1 class="acc_creation_title">Forgot Password</h1>
+                        <a href="#" class="gen_Style close_help_tab"><i class="fa-solid fa-xmark"></i></a>
+                        <div class="acc_conditions_bdr" id="">
+                            <span id="sect_begin1"></span>
+
+                            <!-- Form -->
+                            <div class="acc_conditions_box">
+                                <div class="acc_conditions" id="">
+
+                                    <form  class="email_verForm"  id="resetPass_form">
+                                        <!-- Email -->
+                                        <input type="text" name="subject" placeholder="Subject" id="resetPass_su"/>
+                                        <div class="join_content logIn_content">
+                                            <label for="resetPass_email_input">Enter your email to reset your password</label>
+                                            <span class="join_content_input">
+                                                <input name="text" placeholder="Email" id="resetPass_email_input" type="email" class="active" required>
+                                            </span>
+                                        </div>
+                                        
+                                        <!-- Error Warning -->
+                                        <div class="join_content logIn_content">
+                                            <span class="warning" id="resetPass_warn"></span>
+                                        </div>
+
+                                        <!-- Submit Button -->
+                                        <div class="join_content logIn_content">
+                                            <input id="submit_request_label" type="button" value="Reset" class="gen_btn join_content_btn active" />
+                                            <input id="submit_request" type="button" value="Reset" class="" />
+                                        </div>
+                                    
+                                        <!-- Form Provider - Powered by Postmail -->
+                                        <p class="form_provider">
+                                            <span>Powered by</span>
+                                            <img src="../../blue_Img_Main/postmailIcon.png" alt="Post Mail Icon">
+                                            <a href="https://postmail.invotes.com" target="_blank">PostMail</a>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Customer Care -->
+                            <div class="acc_conditions_box acc_customerCare">
+                                <div class="acc_conditions" id="">
+                                    <h4>Contact Us</h4>
+                                    <p>
+                                        If you have any questions or are in need of more support, do not hesitate to
+                                        <a href="../blue_Customer_Care/Customer_Care.html" target="_self">reach us.</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Back to top of page -->
+                            <a href="#sect_begin1" class="gen_Style back_to_top_btn">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Account Guide bcg -->
+                    <div class="acc_creation_bcg">
+                        <a href="#sect_begin">
+                            <div class="link_spr"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Conditions for creating an Account -->
+                <div class="acc_creation_bdr">
+                    <!-- Account Guide Box -->
+                    <div class="acc_creation_box">
+                        <h1 class="acc_creation_title">Account Guide</h1>
+                        <a href="#sect_begin" class="gen_Style close_help_tab"><i class="fa-solid fa-xmark"></i></a>
+                        <div class="acc_conditions_bdr" id="">
+                            <span id="sect_begin"></span>
+
+                            <!-- Table of Content -->
+                            <div class="acc_conditions_box acc_condition_TOC">
+                                <h2>Content</h2>
+                                <div class="table_contents">
+                                    <div class="table_section">
+                                        <a href="#sect_1" id="log_1"> => Log In</a>
+                                        <span class="sub_content log_content">
+                                            <a href="#sect_2" id="log_2">- Username or Email</a>
+                                            <a href="#sect_3" id="log_3">- Password</a>
+                                            <a href="#sect_4" id="log_4">- Forgot Password or Username</a>
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="table_section">
+                                        <a href="#sect_5" id="sign_1"> => Sign Up</a>
+                                        <span class="sub_content sign_content">
+                                            <a href="#sect_6" id="sign_2">- Username</a>
+                                            <a href="#sect_7" id="sign_3">- Password</a>
+                                            <a href="#sect_8" id="sign_4">- Email</a>
+                                            <a href="#sect_9" id="sign_5">- Terms and Conditions</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Log In conditions -->
+                            <div class="acc_conditions_box logIn_conditions_box">
+                                <div class="acc_conditions_head logIn_conditions_head" id="sect_1">
+                                    <h2>Log In</h2>
+                                    <p>
+                                        This is the area where you can log in to your account. 
+                                        That is, if you have created one already.
+                                        <br>
+                                        If you do not have an account kindly sign Up for one.
+                                    </p>
+                                </div>
+                                <div class="acc_conditions logIn_conditions" id="sect_2">
+                                    <h4>Email</h4>
+                                    <p>
+                                        You are required to type in your user ID which is your email.
+                                    </p>
+                                </div>
+                                <div class="acc_conditions logIn_conditions" id="sect_3">
+                                    <h4>Password</h4>
+                                    <p>
+                                        You need to enter the password to your account in this area.
+                                    </p>
+                                </div>
+                                <div class="acc_conditions logIn_conditions" id="sect_4">
+                                    <h4>Forgot your password or username</h4>
+                                    <p>
+                                        If you forgot your password, you can click the info icon, i.e 
+                                        <span id="acc_Login_issue2">" <i class="fa-solid fa-info-circle"></i> "</span>
+                                        to request assisstance. 
+                                        <br>
+                                        Note the current email associated with the account is required.
+                                        If it cannot be accessed for whatever reason, then your phone number will be requested.
+                                        <br>
+                                        If none of the above can be obtained you will need to reach customer services for further help.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Sign Up Conditions -->
+                            <div class="acc_conditions_box signUp_conditions_box">
+                                <div class="acc_conditions_head signUp_conditions_head" id="sect_5">
+                                    <h2>Sign Up</h2>
+                                    <p>
+                                        This section is for new or old customers who wish to create an account
+                                        <br>
+                                        If you already have an account kindly log in.
+                                    </p>
+                                </div>
+                                <div class="acc_conditions signUp_conditions" id="sect_6">
+                                    <h4>Name</h4>
+                                    <p>This is your unique identif that would be used to identify you on our platform in regards to services being rendered.
+                                        Example; online orders, payments, etcetera.
+                                        <br>
+                                        Kindly note the following when creating your username
+                                        <br>
+                                        <div class="condition_list_box">
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>Your name given should be your legal name as we document every purchase/services rendered</p>
+                                            </div>
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>Username can <strong>NOT</strong> contain special characters ;
+                                                    which includes but is not limited to: 
+                                                    <br>
+                                                    <strong>'' "" @  # $ % ^ ` & * () = ; , <> . {} [] \ ! | ~ / + - ?</strong>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>
+                                                    Username must not be less than <strong>"5"</strong> characters 
+                                                    or greater than <strong>"20"</strong> characters
+                                                </p>
+                                            </div>
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>
+                                                    Username must contain at least one of <strong>a-z or A-Z</strong>. Numbers are optional.
+                                                </p>
+                                            </div>
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>
+                                                    Numbers can ONLY end a username but can <strong>NOT</strong> 
+                                                    start or be the only characters of a username
+                                                </p>
+                                            </div>
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>
+                                                    Underscore can <strong>NOT</strong> start/end a username,
+                                                    or be the only characters of a username.
+                                                    <br>
+                                                    It can only appear once.
+                                                </p>
+                                            </div> -->
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="acc_conditions signUp_conditions" id="sect_7">
+                                    <h4>Password</h4>
+                                    <p>
+                                        A password is required in order to secure your account.
+                                        It should have the following format:
+                                        <br>
+                                        <div class="condition_list_box">
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>
+                                                    Password must contain at least one of 'a-z', 'A-Z', '0-9', 
+                                                    special characters eg; @  # $ % ^ ` & * () = ; , <> . {} [] \ ! | ~ / + - ?
+                                                </p>
+                                            </div>
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>
+                                                    Password must be a minimum length of <strong>"8"</strong> characters
+                                                </p>
+                                            </div>
+                                            <div class="condition_lists">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                <p>Password must be the same for confirm password for it to be accepted</p>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="acc_conditions signUp_conditions" id="sect_8">
+                                    <h4>Email</h4>
+                                    <p>
+                                        A valid working email is required for logging in and recovering your account if necessary.
+                                        <br>
+                                        <strong>Please note that It will be used for verification before you can create your account.</strong>
+                                    </p>
+                                </div>
+                                <div class="acc_conditions signUp_conditions" id="sect_9">
+                                    <h4>Terms and Conditions</h4>
+                                    <p>
+                                        The terms and conditions is an inexhaustable list of all rights, obligations, priviledges and expectations
+                                        that is required in order for us to serve you better.
+                                        <br>
+                                        You may access it from the "Sign In" tab or 
+                                        <span class="blue_craft_terms">"here"</span>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Customer Care -->
+                            <div class="acc_conditions_box acc_customerCare">
+                                <div class="acc_conditions" id="">
+                                    <h4>Contact Us</h4>
+                                    <p>
+                                        If you have more questions that could not be calrified in this document,
+                                        do not hesitate to <a href="../blue_Customer_Care/Customer_Care.html" target="_blank">Reach Us</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Back to top of page -->
+                            <a href="#sect_begin" class="gen_Style back_to_top_btn">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Account Guide bcg -->
+                    <div class="acc_creation_bcg">
+                        <a href="#sect_begin">
+                            <div class="link_spr"></div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Test For verification -->
+                <div class="vercode_bdr ">
+                    
+                    <!-- preloader -->
+                    <div class="ver_loader">
+                        <span class="vl_1">
+                            <span class="vl_2"></span>
+                        </span>
+                        <p class="vl_note">
+                            <span id="loader_ctnt">Processing</span>
+                            <span id="vl_note_loader">
+                                <i class="fa-solid fa-circle" style="--i:1"></i>
+                                <i class="fa-solid fa-circle" style="--i:2"></i>
+                                <i class="fa-solid fa-circle" style="--i:3"></i>
+                            </span>
+                        </p>
+                    </div>
+                        
+                    <!-- close box -->
+                    <div class=" gen_Style close_verification_box">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    <!-- background -->
+                    <div class="vercode_bcg"></div>
+
+                    <!-- content -->
+                    <div class="vercode_box">
+                        <form  class="email_verForm"  id="email_form">
+
+                            <div class="ask_for_ver">
+                                <h4>Verification</h4>
+                                <p>
+                                    <span id="ver_Newuser_name"></span>
+                                    <span id="ver_sub_title">will need to be verified before you can continue</span>
+                                </p>
+                            </div>
+
+                            <!-- User Details -->
+                            <input type="text" name="subject" placeholder="Subject"id="new_email_verSubject" />
+                            <textarea name="text" placeholder="Message" id="new_email_verBody"></textarea>
+                            <input type="text" name="reply_to" placeholder="Your Email" id="new_email_verBtn"/>
+
+                            <!-- Validation field -->
+                            <span class="typeincode">
+                                <!-- <h4>An OTP has been sent to your email</h4> -->
+                                <span class="input_verCode_num">
+                                    <input id="input_verCode" type="text" placeholder="Enter Code here"/>
+                                </span>
+                                <p>Code expires in <span id="time_countdown">300</span>seconds</p>
+                            </span>
+
+                            <!-- set the reply-to address -->
+                            <span class="ver_req_box">
+                                <input id="submit_form" type="button" value="Get Code" class="" />
+                                <input id="submit_verCode" type="button" value="Verify" class="hideBtn" />
+                                <input id="request_verCode" type="button" value="Try Again" class="hideBtn" />
+                                <p class="ver_sent_warn"></p>
+                            </span>
+                        
+                            <!-- Form Provider - Powered by Postmail -->
+                            <p class="form_provider">
+                                <span>Powered by</span>
+                                <img src="../../blue_Img_Main/postmailIcon.png" alt="Post Mail Icon">
+                                <a href="https://postmail.invotes.com" target="_blank">PostMail</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- Footer -->
+                <div class="footer_basic_bdr">
+                    <div class="footer_basic_box">
+                        <h2>CRAFTOLOGIES Ltd<i class="fa-solid fa-trademark"></i></h2>
+                        <p><i class="fa-regular fa-copyright"></i>2023 | All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Script -->
+        <script src="Signup_script.js"></script>
+        <script src="verification_script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="html_class">
+    <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Verification</title>
+    <link rel="shortcut icon" href="../../blue_Img_Main/logoIcn.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../Main_Blue_style.css">
+	<link rel="stylesheet" type="text/css" href="Signup_style.css">
+	<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://kit.fontawesome.com/a46ad8b86a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src =  
+    "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" > 
+    </script> 
+    <script type="text/javascript" src= 
+    "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"> 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    </head>
+    <body class="base">
+
+        <div class="vercode_bdr active">
+            <!-- preloader -->
+            <div class="ver_loader active">
+                <span class="vl_1">
+                    <span class="vl_2"></span>
+                </span>
+                <p class="vl_note">
+                    <span id="loader_ctnt"></span>
+                    <span id="vl_note_loader">
+                        <i class="fa-solid fa-circle" style="--i:1"></i>
+                        <i class="fa-solid fa-circle" style="--i:2"></i>
+                        <i class="fa-solid fa-circle" style="--i:3"></i>
+                    </span>
+                </p>
+            </div>
+                
+            <!-- close box -->
+            <div class=" gen_Style close_verification_box">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!-- background -->
+            <div class="vercode_bcg"></div>
+
+            <!-- content -->
+            <div class="vercode_box">
+
+                <!-- Temporary test form for Email Verification -->
+                <form  class="email_verForm"  id="email_form">
+
+                    <div class="ask_for_ver">
+                        <h4>Verification Required</h4>
+                        <p>Before your account can be created, you will have to be verified</p>
+                    </div>
+
+                    <input type="text" name="subject" placeholder="Subject"id="new_email_verSubject" />
+                    <textarea name="text" placeholder="Message" id="new_email_verBody"></textarea>
+
+                    <input type="hidden" name="access_token" value="0m8ikok0thqv6rtoucea493n" />
+                    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+                    
+                    <!-- User Inputed email -->
+                    <input type="text" name="reply_to" placeholder="Your Email" id="new_email_verBtn"/>
+
+
+                    <!-- Validation field -->
+                    <span class="typeincode">
+                        <span class="input_verCode_num">
+                            <input id="input_verCode" type="text" placeholder="Enter the OTP sent to your email" autocomplete="off"/>
+                        </span>
+                        <p>Code expires in <span id="time_countdown"></span></p>
+                    </span>
+
+                    <!-- set the reply-to address -->
+                    <span class="ver_req_box">
+                        <input id="submit_form" type="submit" value="Get Code" class="hideBtn" />
+                        <input id="submit_verCode" type="button" value="Verify" class="" />
+                        <p class="ver_sent_warn"></p>
+                    </span>
+                
+                    <!-- Form Provider - Powered by Postmail -->
+                    <p class="form_provider">
+                        <span>Powered by</span>
+                        <img src="../../blue_Img_Main/postmailIcon.png" alt="Post Mail Icon">
+                        <a href="https://postmail.invotes.com" target="_blank">PostMail</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        
+
+
+        <!-- script -->
+        <script src="verification_script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,191 @@
+
+
+
+
+
+/* --- Our Iconic feature--- */
+
+.good_phrase_bdr{
+    width: 100%;
+    height: 60vh;
+    min-height: 500px;
+    max-height: 900px;
+    background-color: #f3f3f3;
+}
+
+.good_phrase_bdr.reverse_bcg{
+    background: #fff;
+}
+
+.good_phrase_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.good_phrase_box .box_size{
+    width: 50%;
+}
+
+.phrase_img_box{
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.phrase_img_box .ground{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: -8px 8px 5px 5px #494949a9;
+    overflow: hidden;
+}
+
+.phrase_img_box .background{
+    top: 15%;
+    left: 15%;
+    background-color: #282828f2;
+}
+
+.phrase_img_box .foreground{
+    top: 20%;
+    left: 20%;
+    background-color: #fff;
+}
+
+.phrase_img_box .ground img{
+    width: 100%;
+    height: 100%;
+}
+
+.phrase_content_box{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.phrase_content_box::after{
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: 10%;
+    width: 3px;
+    height: 80%;
+    background-color: #fff;
+    background-color: #0b4199;
+}
+
+.phrase_content{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 15px 0px 10px;
+    row-gap: 20px;
+    /* color: #fff; */
+}
+
+.phrase_content .phrase_title{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0b4199;
+    font-weight: bolder;
+}
+
+.phrase_content .phrasea_sub_title{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/*  ------- Affiliates ------- */
+
+.celebrity_bdr{
+    width: 100%;
+    height: 500px;
+}
+
+.celebrity_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #e3e3e3;
+    /* color: #fff; */
+    padding: 10px;
+}
+
+.celebrity_box.reverse_box{
+    flex-direction: row-reverse;
+    /* background-color: #fff; */
+    color: #000;
+}
+
+.celebrity_box .box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.celebrity_image_bdr .celebrity_image_box{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.celebrity_image_bdr .celebrity_image_box img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.celebrity_image_bdr .celebrity_title{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celebrity_image_bdr .celebrity_title p{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.celebrity_note_bdr .celebrity_note_box{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celebrity_note_box .quote_arrow i{
+    position: absolute;
+    /* color: #fff; */
+}
+
+.celebrity_box.reverse_box .quote_arrow i{
+    color: #0a3fa1;
+}
+
+.celebrity_note_box .quote_arrow .fa-quote-left{
+    left: 0;
+    top: 0;
+}
+
+.celebrity_note_box .quote_arrow .fa-quote-right{
+    right: 0;
+    bottom: 0;
+}
