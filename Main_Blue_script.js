@@ -13,8 +13,7 @@
 
     window.addEventListener('load' , () => {
         preloader.style.display = "none";
-        document.body.classList.remove('off_Flow');
-        document.body.classList.add('on_Flow');
+        onBodyFlow();
     });
 
 
@@ -97,55 +96,38 @@
     // SEARCH
         const searchStruct = 
         `
-            <div class="search_box">
-                <i class="fa-solid fa-xmark-circle close_search_frame"></i>
-                <div class="search_box_bcg"></div>
-                <div class="search_frame_box"></div>
-            </div>
+            <i class="fa-solid fa-xmark-circle close_search_frame"></i>
+            <div class="search_box_bcg"></div>
+            <div class="search_frame_box"></div>
         `;
         const searchBox = document.querySelector('.search_box');
-        const searchBcg = document.querySelector('.search_box_bcg');
-        const searchFrameBox = document.querySelector('.search_frame_box');
-        const closeSearchFrame = document.querySelector('.close_search_frame');
         let searchFrame;
-        let winLoc = window.location;
-        let winLocOrg = window.location.origin;
-        let winLocHost = window.location.host;
-        let winLocPath = window.location.pathname;
 
         // SEARCH    
         const searchBtn = document.querySelector('.search_btn');
         searchBtn.addEventListener("click" , () => {
-            // initiantiateSearch("../blue_Search/blue_Search.html");
-            opnSrch();
+            initiantiateSearch("/blue_Content/blue_Search/blue_Search.html");
         });
-        
-        function opnSrch()
-        {
-            console.log(winLocPath);
-            console.log(winLocHost + "/blue_Content/blue_Search/blue_Search.html");
-            // window.location.pathname = "/blue_Content/blue_Search/blue_Search.html";
-        }
+
 
         function initiantiateSearch(searchLink) 
         {
-            if(searchBox.classList.contains('active'))
-            {
-                if(window.innerWidth > 1000)
-                {
-                    onBodyFlow();
-                }
-                searchBox.classList.remove('active');
-                searchFrameBox.classList.remove('active');
-                searchFrame = searchFrameBox.querySelector('iframe');
-                searchFrameBox.removeChild(searchFrame);
-            }
-            else
-            {
+            const searchBox = document.createElement("div");
+            searchBox.classList.add("search_box");
+
+            searchBox.innerHTML = searchStruct;
+            main.appendChild(searchBox);
+
+
+            const searchBcg = document.querySelector('.search_box_bcg');
+            const searchFrameBox = document.querySelector('.search_frame_box');
+            const closeSearchFrame = document.querySelector('.close_search_frame');
+                
                 if(window.innerWidth > 1000)
                 {
                     offBodyFlow();
                 }
+
                 searchBox.classList.add('active');
                 searchFrameBox.classList.add('active');
                 
@@ -154,30 +136,25 @@
                 searchFrame.classList.add('search_frame');
                 searchFrame.src = searchLink;
                 searchFrameBox.appendChild(searchFrame);
-            }
+
+                closeSearchFrame.addEventListener("click" , () => {
+                if(window.innerWidth > 1000)
+                    {
+                        onBodyFlow();
+                    }
+                    main.removeChild(searchBox);
+                });
+
+                searchBcg.addEventListener("click" , () => {
+                    if(window.innerWidth > 1000)
+                    {
+                        onBodyFlow();
+                    }
+                    main.removeChild(searchBox);
+                });
         }
 
-        // closeSearchFrame.addEventListener("click" , () => {
-        //     if(window.innerWidth > 1000)
-        //     {
-        //         onBodyFlow();
-        //     }
-        //     searchBox.classList.remove('active');
-        //     searchFrameBox.classList.remove('active');
-        //     searchFrame = searchFrameBox.querySelector('iframe');
-        //     searchFrameBox.removeChild(searchFrame);
-        // });
-
-        // searchBcg.addEventListener("click" , () => {
-        //     if(window.innerWidth > 1000)
-        //     {
-        //         onBodyFlow();
-        //     }
-        //     searchBox.classList.remove('active');
-        //     searchFrameBox.classList.remove('active');
-        //     searchFrame = searchFrameBox.querySelector('iframe');
-        //     searchFrameBox.removeChild(searchFrame);
-        // });
+        
     
 
     

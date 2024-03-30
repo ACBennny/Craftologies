@@ -335,38 +335,38 @@
 
 
 
-    // SCROLL REVEAL
+    // SCROLL REVEAL - Un comment for scroll reveal effect
     
-    ScrollReveal({ 
-        reset: true,
-        distance: '100px',
-        duration: 2500,
-        delay: 400
-    });
+    // ScrollReveal({ 
+    //     reset: true,
+    //     distance: '100px',
+    //     duration: 2500,
+    //     delay: 400
+    // });
 
     // ScrollReveal().reveal('.navbar_bdr');
-    ScrollReveal().reveal('.welcome_message h1', { delay: 100 , origin: 'left' });
-    ScrollReveal().reveal('.welcome_message p', { delay: 200, origin: 'right' });
-    ScrollReveal().reveal('.welcome_message .join_now1', { delay: 500, origin: 'bottom' });
-    ScrollReveal().reveal('.sample_head .content', { delay: 200 , origin: 'left' });
-    ScrollReveal().reveal('.sample_head .sub_content', { delay: 250, origin: 'right' });
-    ScrollReveal().reveal('.sample_slide_content', { delay: 300, origin: 'right'});
-    ScrollReveal().reveal('.manager_note_box .title', { delay: 200 , origin: 'left' });
-    ScrollReveal().reveal('.manager_note_box .sub_title', { delay: 250, origin: 'right' });
-    ScrollReveal().reveal('.manager_note_box .note_paragraph', { delay: 800, origin: 'bottom' });
-    ScrollReveal().reveal('.inspire_bcg', { delay: 200, origin: 'left' });
-    ScrollReveal().reveal('.inspire_quote', { delay: 200, origin: 'right' });
-    ScrollReveal().reveal('.quote_author', { delay: 200, origin: 'right' });
-    ScrollReveal().reveal('.phrase_title', { delay: 150, origin: 'right' });
-    ScrollReveal().reveal('.phrase_sub_title', { delay: 250, origin: 'right' });
-    ScrollReveal().reveal('.phrase_message', { delay: 300, origin: 'right' });
-    ScrollReveal().reveal('.phrase_img_box', { delay: 100, origin: 'top', interval: 50 });
-    ScrollReveal().reveal('.see_all_products h3', { delay: 150, origin: 'left' });
-    ScrollReveal().reveal('.see_all_products a', { delay: 350, origin: 'right' });
-    ScrollReveal().reveal('.great_perk_box .perk_box', { delay: 100, origin: 'left', interval: 50 });
-    ScrollReveal().reveal('.final_sign_title', { delay: 180 , origin: 'left' });
-    ScrollReveal().reveal('.final_sign_sub_title', { delay: 200, origin: 'right' });
-    ScrollReveal().reveal('.final_sign_btn_box', { delay: 220, origin: 'bottom' });
+    // ScrollReveal().reveal('.welcome_message h1', { delay: 100 , origin: 'left' });
+    // ScrollReveal().reveal('.welcome_message p', { delay: 200, origin: 'right' });
+    // ScrollReveal().reveal('.welcome_message .join_now1', { delay: 500, origin: 'bottom' });
+    // ScrollReveal().reveal('.sample_head .content', { delay: 200 , origin: 'left' });
+    // ScrollReveal().reveal('.sample_head .sub_content', { delay: 250, origin: 'right' });
+    // ScrollReveal().reveal('.sample_slide_content', { delay: 300, origin: 'right'});
+    // ScrollReveal().reveal('.manager_note_box .title', { delay: 200 , origin: 'left' });
+    // ScrollReveal().reveal('.manager_note_box .sub_title', { delay: 250, origin: 'right' });
+    // ScrollReveal().reveal('.manager_note_box .note_paragraph', { delay: 800, origin: 'bottom' });
+    // ScrollReveal().reveal('.inspire_bcg', { delay: 200, origin: 'left' });
+    // ScrollReveal().reveal('.inspire_quote', { delay: 200, origin: 'right' });
+    // ScrollReveal().reveal('.quote_author', { delay: 200, origin: 'right' });
+    // ScrollReveal().reveal('.phrase_title', { delay: 150, origin: 'right' });
+    // ScrollReveal().reveal('.phrase_sub_title', { delay: 250, origin: 'right' });
+    // ScrollReveal().reveal('.phrase_message', { delay: 300, origin: 'right' });
+    // ScrollReveal().reveal('.phrase_img_box', { delay: 100, origin: 'top', interval: 50 });
+    // ScrollReveal().reveal('.see_all_products h3', { delay: 150, origin: 'left' });
+    // ScrollReveal().reveal('.see_all_products a', { delay: 350, origin: 'right' });
+    // ScrollReveal().reveal('.great_perk_box .perk_box', { delay: 100, origin: 'left', interval: 50 });
+    // ScrollReveal().reveal('.final_sign_title', { delay: 180 , origin: 'left' });
+    // ScrollReveal().reveal('.final_sign_sub_title', { delay: 200, origin: 'right' });
+    // ScrollReveal().reveal('.final_sign_btn_box', { delay: 220, origin: 'bottom' });
 
 
 
