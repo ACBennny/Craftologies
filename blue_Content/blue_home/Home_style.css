@@ -1375,6 +1375,11 @@ p{
         grid-auto-columns: calc((100% / 3) - 9px);
     }
 
+    .mini_view_box .close_mini_view{
+        transform: translate(0% , 0%);
+        margin: 10px;
+    }
+
     .inspire_bcg{
         background-image: none;
     }
@@ -1428,15 +1433,6 @@ p{
     .mini_view_bdr .mini_view_box{
         overflow-x: hidden;
         overflow-y: auto;
-    }
-
-    .mini_view_box .close_mini_view{
-        /* position: fixed;
-        right: 50%;
-        top: -10%;
-        top: 5%; */
-        transform: translate(0% , 0%);
-        margin: 10px;
     }
 
     .mini_view_box  .mini_view_section{
