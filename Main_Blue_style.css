@@ -371,7 +371,7 @@ input{
 
 .profile_links.active{
     width: 200px;
-    height: 250px;
+    height: 200px;
     visibility: visible;
     opacity: 1;
     transition: 100ms;
@@ -398,45 +398,11 @@ input{
     text-align: center;
 }
 
-.profile_links .prof_link_btn .theme_box{
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 50%;
-    background-color: #fff;
-    overflow: hidden;
-}
-
-.profile_links .prof_link_btn .theme_box .light_theme{
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: default;
-}
-
-.profile_links .prof_link_btn .theme_box .dark_theme{
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: default;
-}
-
-.profile_links .prof_link_btn .theme_box .curr_theme{
-    border-radius: 50%;
-    background: #0a3fa1;
-    cursor: pointer;
-}
-
-.profile_links .prof_link_btn .theme_box .curr_theme i{
-    color: #fff;
-}
 
 
-/* ------ SEARCH ------ */
+
+/* ---------------- SEARCH --------------- */
+
 .profile_logo .search_btn{
     display: flex;
 }
