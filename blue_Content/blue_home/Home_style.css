@@ -887,12 +887,17 @@ p{
     position: relative;
     width: 60%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .phrase_img_box .ground{
     position: absolute;
     width: 60%;
     height: 60%;
+    max-width: 650px;
+    max-height: 650px;
     border-radius: 5px;
     box-shadow: -8px 8px 5px 5px #494949a9;
     overflow: hidden;

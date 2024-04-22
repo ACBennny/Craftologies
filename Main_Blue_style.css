@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
@@ -10,25 +11,6 @@
 html{
     scroll-behavior: smooth;
 }
-
-body{
-    /* width: 100%;
-    min-height: 100vh; */
-    -webkit-tap-highlight-color: transparent;
-}
-
-body.off_Flow{
-    overflow: hidden;
-}
-
-body.on_Flow{
-    overflow: visible;
-}
-
-body.base{
-    background-color: #f1f1f1;
-}
-
 
 ::-webkit-scrollbar{
     width: 12px;
@@ -50,9 +32,28 @@ body.base{
     background-color: #555;
 }
 
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+body.off_Flow{
+    overflow: hidden;
+}
+
+body.on_Flow{
+    overflow: visible;
+}
+
+body.base{
+    background-color: #f1f1f1;
+}
 
 
-a{
+
+a,
+a:focus,
+a:visited{
     text-decoration: none;
 }
 

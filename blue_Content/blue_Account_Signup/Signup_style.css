@@ -1,5 +1,9 @@
 
 
+html:root{
+    --accCreationBoxWidth: 800px;
+}
+
 body{
     color: #000;
 }
@@ -220,7 +224,7 @@ strong{
 
 .join_content .join_content_input{
     position: relative;
-    width: 80%;
+    width: calc(100% - 20px);
     max-width: 600px;
     border-radius: 5px;
     border-bottom: 3px solid #22222288;
@@ -361,6 +365,9 @@ strong{
 }
 
 .acc_creation_bcg{
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 0%;
     height: 100%;
     background-color: #4b4a4ab8;
@@ -368,10 +375,11 @@ strong{
     transition: 300ms;
     opacity: 0;
     visibility: hidden;
+    z-index: -1;
 }
 
 .acc_creation_bcg.active{
-    width: 30%;
+    width: 100%;
     opacity: 1;
     visibility: visible;
 }
@@ -390,6 +398,7 @@ strong{
 .acc_creation_box{
     position: relative;
     width: 0%;
+    max-width: 800px;
     height: 100%;
     background-color: #e9e9e9;
     transition: 300ms;
@@ -1011,12 +1020,9 @@ strong{
 
 @media only screen and (max-width: 780px)
 {
-    .acc_creation_bcg.active{
-        width: 10%;
-    }
 
     .acc_creation_box.active{
-        width: 90%;
+        width: 100%;
     }
 }
 
