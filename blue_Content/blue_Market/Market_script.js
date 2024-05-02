@@ -1,3 +1,5 @@
+
+
 const loremContainer = document.querySelector('.lorem-container');
 const lorem = document.querySelector('.lorem');
 const scrollbar = document.querySelector('.scrollbar');
@@ -82,3 +84,15 @@ scrollbar.addEventListener('click', (e) => {
 // Initialize scrollbar
 updateScrollbar();
 updateThumbPosition();
+
+
+
+
+
+
+
+
+
+
+
+

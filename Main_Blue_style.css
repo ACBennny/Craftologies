@@ -549,44 +549,6 @@ input{
 }
 */
 
-.testBox{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-@property --var1 {
-    syntax: "<color>";
-    inherits: true;
-    initial-value: #0a3fa1;
-}
-
-.test_phrase{
-    width: 250px;
-    height: 500px;
-    background: #0a3fa1;
-    margin: 20px 0px;
-    background-position: center;
-    overflow: hidden;
-    overflow-y: scroll;
-    scrollbar-gutter: stable;
-    transition: --var1 500ms;
-    transition-delay: 1000ms;
-}
-
-.test_phrase:hover {
-    --var1: hsla(0, 2%, 67%, 0.529);
-    transition: --var1 500ms;
-}
-
-.test_phrase::-webkit-scrollbar-track {
-    background: #00000000;
-    width: 8px;
-}
-
-.test_phrase::-webkit-scrollbar-thumb {
-    background: var(--var1);
-}
 
 
 
