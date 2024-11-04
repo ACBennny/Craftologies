@@ -393,7 +393,7 @@
                                                     clearInterval(verSuccesstimer);
                                                     join_body.removeChild(join_body_main);
                                                     preloader.style.display = "flex";
-                                                    setTimeout(() => window.location.pathname = "../../blue_home/Home.html" , 3000);
+                                                    setTimeout(() => window.location.pathname = "/blue_Content/blue_Profile/Profile.html" , 3000);
                                                 }
                                             }
                                         , 1000);
