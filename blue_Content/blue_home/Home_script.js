@@ -27,9 +27,6 @@
         const joinNow2Btn = document.createElement('div');
         const joinNow3Btn = document.createElement('div');
         const joinNow4Btn = document.createElement('div');
-        
-        const sampleProductCardLink = document.querySelectorAll(".sample_C a");
-        const sampleProductMiniView = document.querySelectorAll(".mini_view_bdr");
 
         window.addEventListener('load' , () => {
             
@@ -205,6 +202,8 @@
             // Clicking the card will open the link to the product
 
         // Mini View
+        const sampleProductCardLink = document.querySelectorAll(".sample_C a");
+        const sampleProductMiniView = document.querySelectorAll(".mini_view_bdr");
 
         // Opens the mini tab
         sampleProductCardLink.forEach(ProductCard => {
@@ -234,7 +233,7 @@
                     // Saves item
                     if(saveProduct.matches(":hover"))
                     {
-                        e.preventDefault();
+                        ProductCard.removeAttribute("href");
                         if(!(saveProductIcon.classList.contains("fa-solid")))
                         {
                             saveProductAfter.textContent = "Saved";
@@ -249,8 +248,8 @@
                     // If the mouse pointer is over the quick view button, it opens 
                     else if(quickProductViewBtn.matches(":hover"))
                     {
+                        ProductCard.removeAttribute("href");
                         offBodyFlow();
-                        e.preventDefault();
                         sampleProductMiniView.forEach(MiniView => {
                             const closeMiniView_Bcg = MiniView.querySelector(".mini_view_bcg");
                             const closeMiniView_Xmk = MiniView.querySelector(".close_mini_view");
