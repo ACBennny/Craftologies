@@ -167,6 +167,25 @@ input{
 
 
 
+/* ===== Check for removal (some pages still have this) ==== */
+.theme_box
+{
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+    opacity: 0 !important;
+    visibility: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+}
+
+
+
+
+
+
+
+
 
 
 
