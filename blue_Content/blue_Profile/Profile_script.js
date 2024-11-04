@@ -6,7 +6,7 @@
  *************************************************************/
 
 
-    
+    let profileMain = document.querySelector(".profile_main");
     const changePfp = document.querySelector('.profile_img_edit_btn');
     const mainpic = document.querySelector('.profile_img .image');
     const quickViewName = document.querySelector("#profile_name_quick");
@@ -27,7 +27,8 @@
     const optSection = document.querySelectorAll('.option_section');
     const clsSection = document.querySelectorAll('.close_section');
     const editBdr = document.querySelectorAll('.edit_info_bdr');
-    const infoSection = document.querySelectorAll('.info_section');
+    const allInfoSection = document.querySelectorAll('.profile_option .info_section');
+    const personalInfoSection = document.querySelectorAll('.personal_info_box .info_section');
     const openEditbtn = document.querySelectorAll('.info_edit_btn');
     const closeEditBtn = document.querySelectorAll('.pInfoCancel');
     const allInputInPersInfo = document.querySelectorAll('.personal_info_main .edit_input_field');
@@ -156,16 +157,21 @@
         // This will open the different sections
 
             //opening the popup
-            let showSection = function(sectionOpn){
+            let showSection = function(sectionOpn)
+            {
+                profileMain.scrollTo(0 , 0);
                 optSection[sectionOpn].classList.add('active');
                 profileCtnt.classList.add("hideCtnt");
             }
 
             // closes popup
             let hideSection = function(sectionCls){
+                profileMain.scrollTo(0 , 0);
                 optSection[sectionCls].classList.remove('active');
                 profileCtnt.classList.remove("hideCtnt");
-                window.location.reload();
+                document.querySelectorAll("input:not([type='button'])").forEach((field) => {
+                    field.value = "";
+                });
             }
 
             opnSection.forEach((btn, i) => {
@@ -213,7 +219,7 @@
                     
                     editBdr[editOpn].classList.add('active');
 
-                    infoSection.forEach(section => {
+                    personalInfoSection.forEach(section => {
                         section.classList.add("hide");
                     });
                 }
@@ -235,7 +241,7 @@
                     editBdr.forEach(bdr => {
                         bdr.classList.remove("active");
                     });
-                    infoSection.forEach(section => {
+                    personalInfoSection.forEach(section => {
                         section.classList.remove("hide");
                     });
                 }
