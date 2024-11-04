@@ -225,7 +225,7 @@
             // Sets title of the product
             ProductCard.title = "Product Name: " + productTitleName.textContent + "\nPrice: " + productTitlePrice.textContent;
 
-            ProductCard.addEventListener("click" , () => {
+            ProductCard.addEventListener("click" , e => {
                     // ProductCard.setAttribute("target" , "_blank");
                 //
                 if(window.innerWidth > 500 && window.innerHeight > 500)
@@ -233,7 +233,7 @@
                     // Saves item
                     if(saveProduct.matches(":hover"))
                     {
-                        ProductCard.removeAttribute("href");
+                        e.preventDefault();
                         if(!(saveProductIcon.classList.contains("fa-solid")))
                         {
                             saveProductAfter.textContent = "Saved";
@@ -249,7 +249,7 @@
                     else if(quickProductViewBtn.matches(":hover"))
                     {
                         offBodyFlow();
-                        ProductCard.removeAttribute("href");
+                        e.preventDefault();
                         sampleProductMiniView.forEach(MiniView => {
                             const closeMiniView_Bcg = MiniView.querySelector(".mini_view_bcg");
                             const closeMiniView_Xmk = MiniView.querySelector(".close_mini_view");
@@ -319,10 +319,6 @@
                         });
                     }
                     // If mouse pointer is on any other area, the product page is opened
-                    else
-                    {
-                        ProductCard.href = currProductLink;
-                    }
                 }
                 
             });
