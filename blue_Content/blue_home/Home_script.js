@@ -27,6 +27,9 @@
         const joinNow2Btn = document.createElement('div');
         const joinNow3Btn = document.createElement('div');
         const joinNow4Btn = document.createElement('div');
+        
+        const sampleProductCardLink = document.querySelectorAll(".sample_C a");
+        const sampleProductMiniView = document.querySelectorAll(".mini_view_bdr");
 
         window.addEventListener('load' , () => {
             
@@ -202,8 +205,6 @@
             // Clicking the card will open the link to the product
 
         // Mini View
-        const sampleProductCardLink = document.querySelectorAll(".sample_C a");
-        const sampleProductMiniView = document.querySelectorAll(".mini_view_bdr");
 
         // Opens the mini tab
         sampleProductCardLink.forEach(ProductCard => {
